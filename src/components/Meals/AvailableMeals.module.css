@@ -20,7 +20,12 @@
   justify-content: center;
 }
 
-.loadingP {
+.mealsError {
+  text-align: center;
+  color: red;
+}
+
+.loading {
   text-align: center;
 }
 
