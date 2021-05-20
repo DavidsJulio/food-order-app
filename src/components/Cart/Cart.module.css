@@ -6,6 +6,22 @@
   overflow: auto;
   max-height: 20rem;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cart-items::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  background-color: #5a1a01;
+  border-radius: 10px;
+  border: 2px solid #5a1a01;
 }
 
 .total {
