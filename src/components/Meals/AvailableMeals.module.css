@@ -5,6 +5,25 @@
   animation: meals-appear 1s ease-out forwards;
 }
 
+.mealsLoading {
+  border: 5px solid black;
+  border-top: 5px solid #ccc;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 3s linear infinite;
+}
+
+.mealsLoadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingP {
+  text-align: center;
+}
+
 .meals ul {
   list-style: none;
   margin: 0;
@@ -20,5 +39,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
